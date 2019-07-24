@@ -13,6 +13,7 @@
 
 // code example for Window Binding
 
+
 // Principle 2
 
 // code example for Implicit Binding
