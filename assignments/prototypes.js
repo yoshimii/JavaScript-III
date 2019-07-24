@@ -22,7 +22,9 @@ function GameObject(attributes){
   this.newDimensions = attributes.dimensions
 }
 
-
+GameObject.prototype.destroy = function(){
+  console.log(`${this.name} was removed from the game.`);
+}
 
 /*
   === CharacterStats ===
@@ -33,7 +35,9 @@ function GameObject(attributes){
 function CharacterStats(attributes){
   this.newHealthPoints = attributes.healthPoints
 }
-
+CharacterStats.prototype.takeDamage = function(){
+  returns (`${this.name} took damage.`);
+}
 /*
   === Humanoid (Having an appearance or character resembling that of a human.) ===
   * team
@@ -48,7 +52,12 @@ function CharacterStats(attributes){
    this.weapons = attributes.newWeapons,
    this.language = attributes.newLanguage
  }
+
  
+ 
+ Humanoid.prototype.greet = function(){
+   console.log(`${this.name} offers a greeting in ${this.language}.`)
+ }
 /*
   * Inheritance chain: GameObject -> CharacterStats -> Humanoid
   * Instances of Humanoid should have all of the same properties as CharacterStats and GameObject.
@@ -114,9 +123,9 @@ function CharacterStats(attributes){
   console.log(swordsman.team); // The Round Table
   console.log(mage.weapons); // Staff of Shamalama
   console.log(archer.language); // Elvish
-  // console.log(archer.greet()); // Lilith offers a greeting in Elvish.
-  // console.log(mage.takeDamage()); // Bruce took damage.
-  // console.log(swordsman.destroy()); // Sir Mustachio was removed from the game.
+  console.log(archer.greet()); // Lilith offers a greeting in Elvish.
+  console.log(mage.takeDamage()); // Bruce took damage.
+  console.log(swordsman.destroy()); // Sir Mustachio was removed from the game.
 
 
   // Stretch task: 
