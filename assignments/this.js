@@ -41,7 +41,9 @@ function Character(object){
 }
 
 const shaggy = new Character({name: 'Shaggy', bff: scoobyDoo.name, saying: 'Zoinks!'});
-shaggy.speak();
+// shaggy.speak();
 // Principle 4
-
+Explicit binding
 // code example for Explicit Binding
+scoobyDoo.speak.call(shaggy);//returns Shaggy info
+shaggy.speak.apply(scoobyDoo);//returns Scooby info
