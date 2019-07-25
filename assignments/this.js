@@ -17,11 +17,31 @@ console.log(this.document);//returns the html for current webpage
 // Principle 2
 Implicit Binding
 // code example for Implicit Binding
-
+const scoobyDoo = {
+    name: "Scooby Doo",
+    favFood: "Scooby snacks",
+    saying: "Scooby dooby doooooo!",
+    bff: "Shaggy",
+    species: "dog",
+    speak: function(){
+        console.log(`My name is ${this.name}, my best friend is ${this.bff} and I love ${this.favFood}. ${this.saying}`);
+    }
+}
+scoobyDoo.speak();
 // Principle 3
-
+New Binding
 // code example for New Binding
+function Character(object){
+    this.name = object.name,
+    this.bff = object.bff,
+    this.saying = object.saying,
+    this.speak = function(){
+        console.log(`My name is ${this.name} and my best friend is ${this.bff}. ${this.saying}`)
+    }
+}
 
+const shaggy = new Character({name: 'Shaggy', bff: scoobyDoo.name, saying: 'Zoinks!'});
+shaggy.speak();
 // Principle 4
 
 // code example for Explicit Binding
