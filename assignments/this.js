@@ -3,7 +3,7 @@
 *
 * 1. Window binding - When this is in the global scope the value of this will be the window object.
 * 2. Implicit binding - Just like any other time we use a method (ex: array.indexOf()) the context of that method is what's on the left side of the dot. So this takes on the place of the object context name.
-* 3. New binding - 
+* 3. New binding - This refers to the instance of the object created by the constructor function. Similar to implicit binding, except that it refers to the object created using the word New.
 * 4. 
 *
 * write out a code example of each explanation above
