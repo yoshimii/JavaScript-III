@@ -10,12 +10,12 @@
 */
 
 // Principle 1
-
+Window Binding
 // code example for Window Binding
-
+console.log(this.document);//returns the html for current webpage
 
 // Principle 2
-
+Implicit Binding
 // code example for Implicit Binding
 
 // Principle 3
