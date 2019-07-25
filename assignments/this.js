@@ -1,9 +1,9 @@
-/* The for principles of "this";
+/* The Four Principles of "this";
 * in your own words. explain the four principle for the "this" keyword below.
 *
-* 1. 
+* 1. Window binding - When this is in the global scope the value of this will be the window object.
 * 2. 
-* 3. 
+* 3. New binding - 
 * 4. 
 *
 * write out a code example of each explanation above
